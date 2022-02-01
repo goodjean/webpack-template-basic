@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello webpack</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  
+</head>
+<body>
+  <h1>Hello Webpack!!</h1>
+  <img src="./images/logo.png" alt="HEROPY" />
+</body>
+</html>
+
+
+<!-- 위에 img태그에 소스경로로 index.html 주변에 images가 없는데 바로
+접근할 수 있는 이유는 webpackconfig파일에서 dist에 index.html이 연결되
+도록 해주는 htmlplugin을 설정햇고 그럼 dist에 index.html이 있는
+상태에서 또 config파일에서 copyplugin을 통해 static부터 모든것을
+카피해서 dist에 연결시켜준다는 설정을 해줌으로써 dist의 index.html이
+바로 static의 images에 접근할 수 있는 이유 -->
